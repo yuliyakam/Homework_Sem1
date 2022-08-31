@@ -15,11 +15,15 @@ if ( first > second )
 {
     Console.Write("Большее число: ");
     Console.WriteLine(first);
+    Console.Write("Меньшее число: ");
+    Console.WriteLine(second);
 }   
 else
 {
     Console.Write("Большее число: ");
     Console.WriteLine(second);
+    Console.Write("Меньшее число: ");
+    Console.WriteLine(first);
 }
 }
 
