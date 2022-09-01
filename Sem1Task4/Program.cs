@@ -7,23 +7,24 @@ Console.Write("Введите второе число ");
 string? secondNumber = Console.ReadLine();
 Console.Write("Введите третье число ");
 string? thirdNumber = Console.ReadLine();
- if (firstNumber != null&&secondNumber != null&&thirdNumber != null)
+ if (firstNumber != null&&secondNumber != null&&thirdNumber != null)// Проверяем, что значения не нулевые, для фунции
+    // Parse (преобразования строки в число)
  {
     int first = int.Parse(firstNumber);
     int second = int.Parse(secondNumber);
     int third = int.Parse(thirdNumber);
-    if (first > second)      
-    {
-      if (first > third) 
+      if (first > second)      
       {
-         Console.Write("Максимальное число ");
-         Console.WriteLine(first);
-      }
-      else
-      {
-         Console.Write("Максимальное число ");
-         Console.WriteLine(third);
-      }
+         if (first > third) 
+         {
+            Console.Write("Максимальное число ");
+            Console.WriteLine(first);
+         }
+         else
+         {
+            Console.Write("Максимальное число ");
+            Console.WriteLine(third);
+         }
     }
     else
     {
