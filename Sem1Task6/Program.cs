@@ -4,15 +4,17 @@
 //==================================================================
 Console.Write("Введите число ");
 string? Number = Console.ReadLine();
-if (Number != null)
+if (Number != null)// Проверяем, что значения не нулевые, для фунции
+    // Parse (преобразования строки в число)
 {   int YourNumber = int.Parse(Number);
-    int mod = YourNumber % 2;
-    if (mod == 0)
-    {
-        Console.WriteLine("Введенное число четное");
-    }
-    else
-    {
-        Console.WriteLine("Введенное число нечетное");
-    }
+    int mod = YourNumber % 2;//Оператор % показывает остаток от деления, у нас на 2, 
+    //т.к ищем четное
+        if (mod == 0)
+        {
+            Console.WriteLine("Введенное число четное");
+        }
+        else
+        {
+            Console.WriteLine("Введенное число нечетное");
+        }
 }
