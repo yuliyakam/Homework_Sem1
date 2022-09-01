@@ -4,17 +4,19 @@
 //==================================================================
 Console.Write("Введите число больше единицы ");
 string? Number = Console.ReadLine();
-if ( Number != null )
+if ( Number != null ) // Проверяем, что значения не нулевые, для фунции
+    // Parse (преобразования строки в число)
 {
 int NumberN = int.Parse(Number);
 int count = 1;
-while (count < NumberN)
+while (count < NumberN) // Пока счетчик count, перебирающий все числа от 1 до введеного,
+// не дошел до самого числа выполняем проверку на четность оператором проверки ост.от дел %
 {  
-        if (count % 2 == 0) 
-        {
-            Console.Write(count);
-            Console.Write(","); 
-        }  
+    if (count % 2 == 0) 
+    {
+        Console.Write(count);
+        Console.Write(","); 
+    }  
     count++;
 }
 }
