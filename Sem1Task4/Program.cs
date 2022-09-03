@@ -13,7 +13,7 @@ string? thirdNumber = Console.ReadLine();
     int first = int.Parse(firstNumber);
     int second = int.Parse(secondNumber);
     int third = int.Parse(thirdNumber);
-      if (first > second)      
+      /*if (first > second)      
       {
          if (first > third) 
          {
@@ -38,5 +38,13 @@ string? thirdNumber = Console.ReadLine();
          Console.Write("Максимальное число ");
          Console.WriteLine(third);
       }
-    }
+    }*/
+    //Задачу можно решить с пом. матиматич.библиотеки Math, встроенной в язык С#
+    //int D = Math.Max(first, second); Сравниваем 2 числа и макс присваив.D
+    int result = Math.Max(Math.Max(first, second), third);
+    Console.WriteLine(result);
+
+    //можно сделать задачу с пом.тернарного оператора
+    int result1 = (((first > second)? first:second) > third)? ((first > second)? first: second):third;
+    Console.WriteLine(result);
  }
