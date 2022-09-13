@@ -2,7 +2,7 @@
 число (N) и выдаёт таблицу кубов чисел от 1 до
 N.*/
 //считываем число из консоли
-int ReadData(string line)
+void ReadData(string line)
 {
     //Выводим сообщение
     Console.WriteLine(line);
